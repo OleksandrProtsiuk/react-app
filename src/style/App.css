@@ -1,0 +1,118 @@
+body {
+  background-image: url("./images/background.jpeg");
+  background-size: cover;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.MainPage {
+  width: 80%;
+  height: 70vh;
+  background: #2C3E50;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 70px 25% calc(100% - (70px + 25%));
+  grid-template-rows: 70vh;
+}
+
+.FaceBar {
+  background-image: url("./images/photo.jpg");
+  background-size: cover;
+  height: 80vh;
+  margin-top: -5vh;
+  position: relative;
+  box-shadow: 0 0 15px #34495E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*--------------- SideBar Styles ----------------*/
+.SideBar {
+  height: 100%;
+}
+
+.Burger {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  color: white;
+  font-size: 25pt;
+}
+
+.Burger:hover {
+  font-size: 35pt;
+  cursor: pointer;
+}
+
+/*--------------- Content Styles ----------------*/
+.Content {}
+
+.ContentTitle {
+  font-weight: 900;
+  color: white;
+  line-height: normal;
+  padding-right: 30px;
+  margin-left: 40px;
+}
+
+.ContentLine {
+  max-width: 80%;
+  margin-left: 40px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.ContentItem {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.67;
+  color: #F39C12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ContentItem::after {
+  content: ':~$';
+  font-weight: 500;
+  color:#3498DB;
+  margin-right: 10pt;
+}
+
+.ContentBody {
+  width: 80%;
+  margin-left: 40px;
+  margin-right: 10px;
+  color: #3498DB;
+}
