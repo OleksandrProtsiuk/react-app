@@ -1,17 +1,14 @@
 import React from 'react';
-import './App.css';
+import './style/App.css';
+import MainPage from "./components/mainPage";
+import Menu from "./components/menu";
 
 function App() {
   return (
-    <div className="App">
-        <br />
-        <h3>Hello world!</h3>
-        <hr />
-        <p>
-            This is my PWA App
-        </p>
-        <svg type="circle" />
-    </div>
+      <div className="App">
+          <MainPage />
+          <Menu />
+      </div>
   );
 }
 
